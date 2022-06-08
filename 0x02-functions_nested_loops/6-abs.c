@@ -2,7 +2,6 @@
 /**
  *  _abs - compute absolute value of an integer
  *
- *  The input number as an integer. 
  *  @i: input should be an integer
  *  Return: absolute value always (SUCCESS)
  *
