@@ -6,9 +6,8 @@
  * @n: The input should be an integer
  * Return: last digit Always (SUCCESS)
  *
- */
+ **/
 int print_last_digit(int n)
-	/** prints last digit **/
 {
 	int i = n % 10;
 
