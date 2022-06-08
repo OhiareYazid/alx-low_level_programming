@@ -1,29 +1,43 @@
 #include "main.h"
 /**
- * jack_bauer  - prints evert fu**ing minutes of the day
+ * times_table  - multiplication table
  *
  * Return: no return   Always (SUCCESS)
  *
 */
-void jack_bauer(void)
+void times_table(void)
 {
-	int hours = 0;
-	int minutes = 0;
+	int num1[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int num2[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int a, b;
+	int result;
+	int firstnum;
+	int lastnum;
 
-	while (hours < 24)
+	for (a = 0; a <= 9; a++)
 	{
-		while (minutes < 60)
+		for (b = 0; b <= 9; b++)
 		{
-			_putchar('0' + (hours / 10));
-			_putchar('0' + (hours % 10));
-			_putchar(':');
-			_putchar('0' + (minutes / 10));
-			_putchar('0' + (minutes % 10));
-			_putchar('\n');
-			minutes++;
+			result = num1[a] * num2[b];
+			firstnum = result / 10;
+			lastnum = result % 10;
+			if (b != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				if (result < 10)
+					_putchar(' ');
+			}
+			if (result < 10)
+				_putchar('0' + result);
+			else
+			{
+				_putchar('0' + firstnum);
+				_putchar('0' + lastnum);
+			}
 		}
-		minutes = 0;
-		hours++;
+		_putchar('\n');
 	}
+
 
 }
