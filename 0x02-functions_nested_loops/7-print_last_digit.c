@@ -8,6 +8,7 @@
  *
  */
 int print_last_digit(int n)
+	/** prints last digit **/
 {
 	int i = n % 10;
 
