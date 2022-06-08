@@ -2,6 +2,7 @@
 
 /**
  * print_alphabet -> prints the lower case alphabets
+ * Return 0: always
 **/
 void print_alphabet(void)
 {
@@ -10,4 +11,5 @@ void print_alphabet(void)
         _putchar(j);
     }
     _putchar('/n');
+    return (0);
 }
