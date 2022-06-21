@@ -6,7 +6,7 @@
  *
  * Return: On Success 1
  *
- * On errot, -1 is returned, and errno is set appropriately
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c)
 {
