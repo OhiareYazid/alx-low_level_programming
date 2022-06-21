@@ -2,7 +2,9 @@
 /**
  * print_chessboard - a function that prints the chessboard.
  *
- * @a:as parameter
+ * @a: as parameter
+ * 
+ * Return: Nothing
  */
 void print_chessboard(char (*a)[8])
 {
