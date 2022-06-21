@@ -5,15 +5,19 @@
  * Return: Always 0 (Success)
  *
  */
-int main(void)
+int main (void)
 {
-	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-
-	for (i = 0; i < 26; i++)
+	int ch;
+	
+	for (ch = 97; ch <= 122; ch++)
 	{
-		putchar(alpha[i]);
+		putchar(ch);
 	}
-	putchar('\n');
+	for (ch = 65; ch <= 90; ch++)
+	{
+		putchar(ch);
+	}
+	putchar(10); /* this is an ascii code for new line*/
+	
 	return (0);
 }
