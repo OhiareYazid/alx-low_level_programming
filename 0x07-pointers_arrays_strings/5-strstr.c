@@ -3,7 +3,7 @@
 /**
  * _strstr - a function that locates a substring_
  * @haystack: A sC string to be scanned
- * @needleL second param
+ * @needle: second param
  * Return: Pointer to the first occurrence of needle
  * needle not part of haystack
  */
